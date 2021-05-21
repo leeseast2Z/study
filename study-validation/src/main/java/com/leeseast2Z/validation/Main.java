@@ -1,5 +1,13 @@
 package com.leeseast2Z.validation;
 
+import com.leeseast2Z.validation.entity.User;
+import com.leeseast2Z.validation.group.Create;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.Valid;
+import java.util.Date;
+import java.util.Map;
+
 /**
  * @Author: limf
  * @Date: 2021/5/21 16:09
@@ -7,6 +15,15 @@ package com.leeseast2Z.validation;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hi~");
+        User user = new User();
+        user.setUsername(null);
+        user.setDate(new Date());
+        user.setaShort(Short.valueOf("1"));
+        // BeanValidator.check(user, Create.class);
+        saveUser(user);
+    }
+
+    public static void saveUser(@Validated(Create.class) User user) {
+        BeanValidator.check(user);
     }
 }

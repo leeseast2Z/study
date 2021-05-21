@@ -12,5 +12,15 @@
         <module>study-validation</module>
     </modules>
 
+    <properties>
+        <spring.version>4.3.8.RELEASE</spring.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
 </project>
