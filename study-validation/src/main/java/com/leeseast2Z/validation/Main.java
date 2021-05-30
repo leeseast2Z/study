@@ -4,9 +4,8 @@ import com.leeseast2Z.validation.entity.User;
 import com.leeseast2Z.validation.group.Create;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.Valid;
+import javax.validation.groups.Default;
 import java.util.Date;
-import java.util.Map;
 
 /**
  * @Author: limf
@@ -23,7 +22,7 @@ public class Main {
         saveUser(user);
     }
 
-    public static void saveUser(@Validated(Create.class) User user) {
+    public static void saveUser(@Validated({Create.class, Default.class}) User user) {
         BeanValidator.check(user);
     }
 }
