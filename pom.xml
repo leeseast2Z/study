@@ -12,6 +12,7 @@
         <module>study-validation</module>
         <module>base</module>
         <module>study-base</module>
+        <module>study-designpattern</module>
     </modules>
 
     <properties>
