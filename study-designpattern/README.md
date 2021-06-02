@@ -5,3 +5,7 @@
 TOC
 
 包层次结构及介绍
+com
+└── leeseast2Z
+    └── singleton           单件模式
+        └── multithreading  单件模式之多线程问题解决方案
