@@ -17,13 +17,10 @@
 
     <properties>
         <spring.version>4.3.8.RELEASE</spring.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <jackson.version>2.6.0</jackson.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
     </dependencies>
 </project>
