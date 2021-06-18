@@ -17,12 +17,13 @@ import com.fasterxml.jackson.annotation.JsonInclude;
  * can not instantiate default bean value to support 'properties=JsonSerialize.Inclusion.NON_DEFAULT' annotation
  */
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class ResponseVO<T>  {
+public class ResponseVO<T> {
     private Integer code;
     private String message;
     private T data;
 
-
+    public ResponseVO() {
+    }
 
     public ResponseVO(Integer code, String message) {
         this.code = code;
