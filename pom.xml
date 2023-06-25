@@ -13,6 +13,7 @@
         <module>study-base</module>
         <module>study-base</module>
         <module>study-designpattern</module>
+        <module>study-j2cache</module>
     </modules>
 
     <properties>
